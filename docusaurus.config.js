@@ -1,4 +1,8 @@
 /* eslint-disable global-require */
+
+const pages = require( './src/pages.config' )
+const { EDIT_URL } = require( './src/consts' )
+
 module.exports = {
   title: 'Shabad OS Docs',
   tagline: 'Documentation site for Shabad OS',
@@ -38,12 +42,20 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
+          to: '/',
+          label: 'Products',
           position: 'left',
+          items: [
+            { to: 'database/', label: 'Database' },
+            { to: 'presenter/', label: 'Presenter' },
+            { to: 'viewer/', label: 'Viewer' },
+            { to: 'mobile/', label: 'Mobile' },
+            { to: 'gurmukhi-utils/', label: 'Gurmukhi Utils' },
+            { to: 'theme-tool/', label: 'Theme Tool' },
+          ],
         },
-        { to: 'blog', label: 'Blog', position: 'left' },
+        { to: 'tutorials/', label: 'Tutorials', position: 'left' },
+        { to: 'community/', label: 'Community', position: 'left' },
         {
           href: 'https://github.com/shabados/docs',
           position: 'right',
@@ -65,19 +77,6 @@ module.exports = {
     footer: {
       links: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Style Guide',
-              to: 'docs/',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
-            },
-          ],
-        },
-        {
           title: 'Community',
           items: [
             {
@@ -98,10 +97,6 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
-            },
-            {
               label: 'GitHub',
               href: 'https://github.com/shabados/docs',
             },
@@ -110,17 +105,13 @@ module.exports = {
       ],
     },
   },
+  plugins: [ ...pages ],
   presets: [
     [
       '@docusaurus/preset-classic',
       {
         docs: {
-          sidebarPath: require.resolve( './sidebars.js' ),
-          editUrl: 'https://github.com/shabados/docs/edit/dev/',
-        },
-        blog: {
-          showReadingTime: true,
-          editUrl: 'https://github.com/shabados/docs/edit/dev/website/blog/',
+          editUrl: EDIT_URL,
         },
         theme: {
           customCss: require.resolve( './src/css/custom.css' ),
