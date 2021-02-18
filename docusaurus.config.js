@@ -76,34 +76,6 @@ module.exports = {
       defaultLanguage: 'javascript',
     },
     footer: {
-      links: [
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Chat',
-              href: 'https://chat.shabados.com',
-            },
-            {
-              label: 'Instagram',
-              href: 'https://instagram.com/shabad_os',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/shabad_os',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/shabados/docs',
-            },
-          ],
-        },
-      ],
     },
   },
   plugins: [ ...pages ],

@@ -97,6 +97,7 @@ html[data-theme='dark'] {
   --ifm-color-danger: var(--ifm-color-danger-dark);
 }
 
+strong,
 h1,
 h2,
 h3,
@@ -150,10 +151,6 @@ blockquote {
 
 .navbar__brand:hover {
   color: var(--ifm-color-primary);
-}
-
-.navbar__brand strong {
-  font-weight: 500;
 }
 
 .navbar__link--active {
@@ -305,4 +302,12 @@ html[data-theme='dark']
   height: inherit;
   width: inherit;
   transform: rotate(45deg);
+}
+
+/*-----------------------------------------------------------------------------
+  Footer
+-----------------------------------------------------------------------------*/
+
+.footer {
+  display: none;
 }
