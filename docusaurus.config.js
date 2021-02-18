@@ -13,7 +13,7 @@ module.exports = {
   organizationName: 'shabados',
   projectName: 'docs',
   themeConfig: {
-    hideableSidebar: true,
+    hideableSidebar: false,
     colorMode: {
       respectPrefersColorScheme: true,
       switchConfig: {
