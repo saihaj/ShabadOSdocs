@@ -5,7 +5,6 @@
 User guides, quick-references, developer best practices, and other Shabad OS related documentation
 
 [![Release][release-image]][release-url]
-[![Next Release][next-image]][next-url]
 
 **Table of contents**
 
@@ -84,10 +83,8 @@ This project is under v3 of the [GPL](LICENSE.md). It is similar to the Golden R
 
 Docusaurus v2 is under the MIT license. [Learn more about Docusaurus >](https://v2.docusaurus.io/)
 
-[release-image]: https://img.shields.io/github/workflow/status/shabados/docs/Continuous%20Integration/master.svg?label=release
-[release-url]: https://github.com/shabados/docs/actions?query=workflow%3A%22Continuous+Integration%22+branch%3Amaster
-[next-image]: https://img.shields.io/github/workflow/status/shabados/docs/Continuous%20Integration/dev.svg?label=next%20release
-[next-url]: https://github.com/shabados/docs/actions?query=workflow%3A%22Continuous+Integration%22+branch%3Adev
+[release-image]: https://img.shields.io/github/workflow/status/shabados/docs/Continuous%20Deployment/main.svg?label=release
+[release-url]: https://github.com/shabados/docs/actions?query=workflow%3A%22Continuous+Deployment%22+branch%3Amain
 [instagram-image]: https://img.shields.io/badge/Instagram-%40shabad__os-C13584.svg?logo=instagram&logoColor=white
 [instagram-url]: https://www.instagram.com/shabad_os/
 [twitter-image]: https://img.shields.io/badge/Twitter-%40shabad__os-1DA1F2.svg?logo=twitter&logoColor=white
