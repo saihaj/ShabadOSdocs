@@ -28,7 +28,7 @@
     "@mdx-js/react": "^1.6.22",
     "clsx": "^1.1.1",
     "prism-react-renderer": "^1.1.1",
-    "react": "^16.8.4",
+    "react": "^17.0.1",
     "react-dom": "^16.8.4"
   },
   "devDependencies": {
