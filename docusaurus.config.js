@@ -1,7 +1,6 @@
 /* eslint-disable global-require */
 
 const pages = require( './src/pages.config' )
-const { EDIT_URL } = require( './src/consts' )
 
 module.exports = {
   title: 'Shabad OS Docs',
@@ -83,9 +82,7 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
-        docs: {
-          editUrl: EDIT_URL,
-        },
+        docs: false,
         theme: {
           customCss: require.resolve( './src/css/custom.css' ),
         },
