@@ -1,136 +1,40 @@
 ---
 title: Database
-sidebar_label: Introduction
 slug: /
 ---
 
-Open, digital representation of Sikh Bani and other Panthic texts,their translations, transliterations, discourse, pronunciation, and more with an evolving, reproducible, and publicly logged set of corrections.
+<p class='lead'>A digital representation of Sikh Bani and other Panthic texts with a public logbook of sangat-sourced corrections</p>
 
-## Motivation & Aims
+The Shabad OS Database contains published materials from around the world including SGPC published Sri Guru Granth Sahib ji, Taksaal published Sri Dasam Granth ji, and SikhNet published English translations by Dr. Sant Singh Khalsa. [Read a full list of published sources used in the database >](source-material)
 
-> An open-source, collaborative Gurbani database for _all_.
+Previous efforts to digitize Sikh banis and panthic texts have mostly been individual efforts. This database being open-source has allowed dozens of individuals to contribute to it's content and accuracy. Thousands of corrections small and large have been made to ensure a continuously accurate database to truly reflect the original published sources. As discrepancies between the originals and digital are found, they can be fixed by anyone editing the plain text files containing the data and opening a pull request to shabados/database ([learn more here >](../tutorials/viewer/proofreading)). Once the PR is accepted into the main branch, database files are automatically generated and can be reflected in online APIs. [Check out the plain text json files >](https://github.com/shabados/database/tree/main/data)
 
-Shabad OS database is a **sustainable**, **collaborative** effort for the Sangat, by the Sangat, to produce the most **accurate** and wholesome Gurbani database for all to use, whether you're building a Gurbani app, or doing Gurbani research and analysis.
+Since the project is open-source, it consequently has reduced the need to duplicate efforts among various parties. There is a central place to update all published sources of bani and panthic texts. There is no point of contention on what should be corrected or not. If it is written a certain way in a published source (e.g. a SGPC published Sri Guru Granth Sahib ji from volumes 1-4 of Shabadaarth circa 2009-2012), then it should be reflected that way in the digital database.
 
-Our mission is to allow others to focus on **innovation** and not spend time reinventing the wheel, while employing ethical licensing and open-source development practices. We want **you** to build something great!
+If there are multiple, reputable sources of bani that should be added, they can be. Various sources can be provided for the same bani. For example the gurbani for jaap sahib found in the SGPC published gutka and Damdami Taksaal published nitnem steek can be present simultaneously in the database. Which source is used can be chosen by developers or provided as a choice to the end-user by a developer.
 
-## Benefits
+Furthermore, if any organization were to attempt paath bhed (critical analysis/revision) on any Sikh composition (e.g. Sri Guru Granth Sahib ji), they could import any number of authentic sources (e.g. authenticated hand-written saroops) to the Shabad OS Database for ease of comparison (each hand-written saroop would exist as it's own version of gurbani, across which one could note any variations in lines).
 
-You may be curious about the benefits of using our database. This section elaborates on several distinct key features that will convince you to go ahead and give it a go!
+In this sense, the Shabad OS Database is providing a single platform, a single point of truth, for all reputable publications of gurbani and panthic texts. All of which is free to be consumed, analyzed, and researched by developers and end-users in variously generated database files and online APIs.
 
-### Fully open-source
+[Start using the Shabad OS Database as the source of truth for your applications >](installing-or-accessing)
 
-Open-source means that the database's contents, history, and modifications are [publicly accessible](https://github.com/shabados/database). Our commitment to open-source allows us to achieve **inclusive collaboration** and focus on building a **sustainable**, **reusable** database that is not controlled or owned by anyone, but can be used by **everyone**. As the work is all public,
+## Partners
 
-We're also able to apply licensing that **protects** the database from non-public modification, yet effectively still grants the ownership of the database to the public (see [licensing](https://github.com/shabados/database#6-license) in project repo for more details).
+GurbaniNow works on the Shabad OS database to ensure high-accuracy of gurbani. Subsequently they use the database to power their online website and API, serving millions of end-users across the globe. Checkout their [website](https://gurbaninow.com), [API](https://api.gurbaninow.com), and [GitHub](https://github.com/GurbaniNow).
 
-Most importantly, open-source means work on the database can always be carried forward by the **community**.
+Basics of Sikhi uses the Shabad OS Database for their YouTube / Instagram videos. They are also providing their own English Translations of Sri Guru Granth Sahib ji (with more to come), for everyone utilizing the Database to read. So people viewing the Shabad OS Presenter or GurbaniNow website will be able to read the Basics of Sikhi English translations. Check out their [YouTube](https://www.youtube.com/basicsofsikhi), [Instagram](https://www.instagram.com/basicsofsikhi), and [website](https://www.basicsofsikhi.com).
 
-### Quality
+## Technology
 
-With **over 6,000 corrections**, we've built upon the work of SikhiToTheMax II, iGurbani, and GurbaniNow databases. We've even consolidated our efforts with the [GurbaniNow Team](https://GurbaniNow.com) as part of our aim to maintain the most accurate Gurbani database. We'd love for others to work with us too.
+It was paramount to us that we be able to track changes to the database in an easy way. Git provides this for plain text, but not so much for binary database files. It allows any programmer or developer to see changes made by history or author. Git is the most widely used source-code management tool for software developers.
 
-A modern [schema](schema) has been designed to capture data in the most effective way, ideal for developing **apps**, carrying out data **analysis**, and undertaking **research**. We have incorporated notes from the likes of esteemed **scholars** such as Bhai Joginder Singh Talwara (Daarji) and Sant Gurbachan Singh Bhindrawale. There are also **multiple** language options and translation sources (see [content](#content) for more information).
+Since most people don't use the data in plain-text, we need a way to generate the various database files programmers and developers would use (e.g. MySQL, MariaDB, SQLite). We do this with [knex](https://github.com/knex/knex), "a SQL query builder that is flexible, portable, and fun to use!"
 
-The database is also **SGPC compliant**, allowing any software developed using this database to be used in Gurdwaras across the world.
+Since 2017, we have been pioneering a new approach to digitizing Sikh bani and panthic texts. As far as we know this is the first and only of it's kind in the Sikh sphere to leverage these technologies. We believe this will become the de facto standard and are proud to already provide this data to millions of end-users.
 
-### Contributions
-
-This project welcomes contributors and contributons from invidiuals and organisations of all levels. We've determined to make it as easy as possible to contribute, and are working on ways to further improve this.
-
-Not a programmer? You can still contribute. Not a Gurmukhi expert? You can still contribute.
-
-Work **with** us and **contribute** via the [GitHub Repo](https://github.com/shabados/database) to discuss issues, add corrections, and contribute to the roadmap of the ultimate Gurbani consolidation project.
-
-### Updates
+## Versioning
 
 Frequent updates to the database are published according to semantic versioning via [npm](https://npmjs.com/package/@shabados/database) and [GitHub releases](https://github.com/shabados/database/releases). This means that you can safely update the database without worrying about the schema changing, according to the version. See [semantic versioning](https://semver.org/) for more information.
 
-### APIs
-
-The `@shabados/database` npm JS package also includes an API that can be used to query the database without SQL. Common operations, such as searching by the first letter of each word in a line have been implemented, and can be used straight away (see [usage overview](usage) for more information).
-
-A hosted API is provided by [GurbaniNow](https://github.com/gurbaninow/api), who also run the [GurbaniNow Search](https://GurbaniNow.com).
-
-### Transparency
-
-Our project is for the Sangat, by the Sangat. Thus, we believe in accountability, attribution, and transparency, allowing the Sangat to determine for themselves the validity and integrity of this Gurbani database.
-
-All work carried out is open-source, and can be seen on [GitHub](https://github.com/shabados/database). The history of changes made to the database can be seen, and with this information easily-accessibly and public, the GitHub repository serves as the transparent source of truth. Anyone can verify the validity and integrity of their copy of the database themselves, saying no more to Gurbani databases that are distributed with no attribution or history.
-
-Anyone is free to join our open [Slack channel](https://slack.shabados.com), where you can chat with us, receive support, and give your feedback.
-
-## Content
-
-The database contains content from a variety of academic and online sources. As a research-quality source of information, the original attribution and sources of the content is provided below.
-
-### Sri Guru Granth Sahib Ji
-
-- [SGPC PDF](https://web.archive.org/web/20171118031846/http://old.sgpc.net/CDN/Siri%20Guru%20Granth%20Sahib%20without%20Index%20%28Uni%29.pdf)
-
-### Sri Dasam Granth
-
-- ਨਿਤਨੇਮ ਤੇ ਹੋਰ ਬਾਣੀਆ, SGPC, May 2017
-  - Jaap
-  - Akal Ustat
-    - Tav Prasad Svaiyay (ਸ੍ਰਾਵਗ ਸੁਧ)
-    - Tav Prasad Svaiyay (ਦੀਨਨ ਕੀ)
-  - Kabiyobach Benti Choupai
-- ਦਸ ਗ੍ਰੰਥੀ, SGPC, March 2006
-  - Akal Ustat
-  - Bachittar Natak
-  - Chandi Charittar Ukat Bilas
-  - Chandi Charittar
-  - Vaar Sri Bhagauti Ji Ki
-  - Gyan Prabodh
-  - Shabad Hazare
-- [Gobind Sadan PDF](https://web.archive.org/web/20161019133456/http://media.sikher.com:80/files/Dasam_Granth.pdf)
-  :::caution This source is not trustworthy and has various mistakes. We are actively looking for an accurate source for the Baanis listed below! Major and obvious mistakes have been corrected.
-  :::
-  - Chaubees Avtaar
-  - Brahma Avtar
-  - Rudra Avtar
-  - 33 Svaiyay
-  - Khalsa Mahima
-  - Shastar Naam Mala
-  - Charitropakhyan
-  - Zafarnama
-  - Hikayat
-
-### Vaaran
-
-- ਵਾਰਾਂ ਭਾਈ ਗੁਰਦਾਸ ਜੀ, SGPC, November 2011
-  - Vaars 1-40
-  - Vaar 41, Pauris 2-28
-- ਅੰਮ੍ਰਿਤ ਕੀਰਤਨ, Khalsa Brothers Amritsar, 40th Edition (July 2011)
-  - Vaar 41, Pauri 1
-
-### Kabit Swaiye
-
-- ਕਬਿਤ ਸਵਯੇੇ ਭਾਈ ਗੁਰਦਾਸ ਜੀ ਸਟੀਕ, Bhai Seva Singh, Singh Brothers Amritsar, 5th Edition (July 2006)
-
-### Bhai Nand Lal Ji
-
-- ਭਾਈ ਨੰਦ ਲਾਲ ਗ੍ਰੰਥਾਵਲੀ, Dr. Ganda Singh, Punjabi University (Patiala), 4th Edition (2009)
-  - Guzals
-  - Rubaiyia
-  - Zindgi Nama
-  - Ganj Nama
-  - Jot Bigas (Farsi)
-  - Jot Bigas (Punjabi)
-  - Tankhah Nama
-  - Rehitnama
-  - Arzul-Alfaaz
-  - Touseefo-Sana
-
-### Sarabloh Granth
-
-- ਅੰਮ੍ਰਿਤ ਕੀਰਤਨ, Khalsa Brothers Amritsar, 24th Edition (September 1992)
-
-### Gurbilas Patshai 10
-
-- ਅੰਮ੍ਰਿਤ ਕੀਰਤਨ, Khalsa Brothers Amritsar, 24th Edition (September 1992)
-
-### Sri Gur Sobha
-
-- ਅੰਮ੍ਰਿਤ ਕੀਰਤਨ, Khalsa Brothers Amritsar, 24th Edition (September 1992)
+We are currently on major version 4, but are actively working on version 5, which will be a breaking change for existing apps. Once version 5 is ready to be released, we will provide documentation on how to migrate from v4.

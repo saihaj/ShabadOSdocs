@@ -1,0 +1,31 @@
+---
+title: Writers
+---
+
+The `Writers` table contains a list of all the authors and composers of the contents in the database.
+
+## Columns
+
+### `id`
+
+The unique identifier of the writer.
+
+| Type    | Constraints |
+| ------- | ----------- |
+| integer | Primary Key |
+
+### `name_english`
+
+The name of the writer, in English.
+
+| Type | Constraints |
+| ---- | ----------- |
+| text | Not Null    |
+
+### `name_gurmukhi`
+
+The name of the writer, in Gurmukhi, ASCII representation.
+
+| Type | Constraints |
+| ---- | ----------- |
+| text | Not Null    |

@@ -1,0 +1,57 @@
+---
+title: Subsections
+---
+
+The `Subsections` table contains a list of all the different subsections, per single [section](sections). Every subsection must belong to a single [section](sections).
+
+To determine which [source](sources) that a subsection is from, retrieve the source of the section that the subsection belongs to, using `section_id`.
+
+## Columns
+
+### `id`
+
+The unique identifier of the subsection.
+
+| Type    | Constraints |
+| ------- | ----------- |
+| integer | Primary Key |
+
+### `section_id`
+
+The unique identifier of the [section](sections) that the section belongs to.
+
+| Type    | Constraints                                              |
+| ------- | -------------------------------------------------------- |
+| integer | Foreign Key ([Sections.id](sections#id)), <br/> Not Null |
+
+### `name_english`
+
+The name of the subsection, in English.
+
+| Type | Constraints |
+| ---- | ----------- |
+| text | Not Null    |
+
+### `name_gurmukhi`
+
+The name of the subsection, in Gurmukhi, ASCII representation.
+
+| Type | Constraints |
+| ---- | ----------- |
+| text | Not Null    |
+
+### `start_page`
+
+The physical "page" from the source that this subsection begins on.
+
+| Type    | Constraints |
+| ------- | ----------- |
+| integer | Not Null    |
+
+### `end_page`
+
+The physical "page" from the source that this subsection ends on.
+
+| Type    | Constraints |
+| ------- | ----------- |
+| integer | Not Null    |

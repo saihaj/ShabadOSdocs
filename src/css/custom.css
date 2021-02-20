@@ -115,7 +115,8 @@ h2 {
   font-size: 1.5rem !important;
 }
 
-h3 {
+h3,
+.lead {
   font-size: 1.25rem !important;
 }
 
