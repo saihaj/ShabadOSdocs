@@ -273,11 +273,16 @@ html[data-theme='dark'] div[class^='docSidebarContainer'] {
   padding: 0.6em 0;
 }
 
-.menu > ul > .menu__list-item {
-  border-top: 1px solid rgba(128, 128, 128, 0.25);
+html[data-theme='light'] .menu > ul > .menu__list-item {
+  border-top: 1px solid #d5d5d5;
 }
 
-.menu > ul > .menu__list-item:first-child {
+html[data-theme='dark'] .menu > ul > .menu__list-item {
+  border-top: 1px solid #444444;
+}
+
+html[data-theme='light'] .menu > ul > .menu__list-item:first-child,
+html[data-theme='dark'] .menu > ul > .menu__list-item:first-child {
   border-top-width: 0px;
   padding-top: 0em;
 }
