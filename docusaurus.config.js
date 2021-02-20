@@ -30,14 +30,13 @@ module.exports = {
     },
     navbar: {
       hideOnScroll: true,
-      title: 'Documentation',
+      title: 'Docs',
       logo: {
         alt: 'ShabadOS Logo',
         src: 'img/logo.png',
       },
       items: [
         {
-          to: '/',
           label: 'Products',
           position: 'left',
           items: [
@@ -61,8 +60,9 @@ module.exports = {
     },
     algolia: {
       // https://v2.docusaurus.io/docs/search/
-      apiKey: 'placeholder',
-      indexName: 'placeholder',
+      appId: '7D05AWXIFX',
+      apiKey: '9177c228f410f6edbe32a2e9c4140b2e',
+      indexName: 'shabados_docs',
     },
     prism: {
       theme: require( 'prism-react-renderer/themes/github' ),
