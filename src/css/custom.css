@@ -76,6 +76,8 @@
   /* code */
   --ifm-code-background: rgba(128, 128, 128, 0.1);
   --ifm-pre-background: var(--ifm-code-background);
+  /* table of contents */
+  --ifm-toc-padding-left: 0.8rem;
 }
 
 html[data-theme='light'] {
@@ -301,6 +303,37 @@ html[data-theme='dark'] div[class^='docSidebarContainer'] {
   height: inherit;
   width: inherit;
   transform: rotate(45deg);
+}
+
+/*-----------------------------------------------------------------------------
+  Table of Contents
+-----------------------------------------------------------------------------*/
+
+.col > div[class^='tableOfContents']:before {
+  content: 'In this article';
+  font-size: 1rem;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  display: block;
+}
+
+ul.table-of-contents {
+  border-left: 0;
+  margin: 0;
+  padding-left: 0;
+  padding-top: 0;
+}
+
+.table-of-contents ul {
+  padding-left: var(--ifm-toc-padding-left);
+}
+
+.table-of-contents li {
+  margin: var(--ifm-toc-padding-vertical) 0;
+}
+
+.table-of-contents__link--active {
+  font-weight: 600;
 }
 
 /*-----------------------------------------------------------------------------
