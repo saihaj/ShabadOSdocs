@@ -28,11 +28,6 @@ module.exports = {
         },
       },
     },
-    announcementBar: {
-      id: 'supportus',
-      content:
-        '⭐️ If you like Shabad OS, give our repos a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/shabados">GitHub</a>! ⭐️',
-    },
     navbar: {
       hideOnScroll: true,
       title: 'Documentation',
