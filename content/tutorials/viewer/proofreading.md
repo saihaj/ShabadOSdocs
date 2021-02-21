@@ -2,11 +2,11 @@
 title: Proofreading
 ---
 
-import differenceBrowser from "../images/proofreading-difference-example-browser.png"
-import differencePdf from "../images/proofreading-difference-example-pdf.png"
-import copySnipAndSketch from "../images/proofreading-example-copy-snip-and-sketch.png"
-import insertCursorGhIssue from "../images/proofreading-example-insert-cursor-gh-issue.png"
-import pasteImageGhIssue from "../images/proofreading-example-paste-image-gh-issue.png"
+import differenceBrowser from '@site/static/img/proofreading-difference-example-browser.png'
+import differencePdf from '@site/static/img/proofreading-difference-example-pdf.png'
+import copySnipAndSketch from '@site/static/img/proofreading-example-copy-snip-and-sketch.png'
+import insertCursorGhIssue from '@site/static/img/proofreading-example-insert-cursor-gh-issue.png'
+import pasteImageGhIssue from '@site/static/img/proofreading-example-paste-image-gh-issue.png'
 
 This tutorial is for users that would like to learn how to improve the digital accuracy of the Shabad OS database. This tutorial will show how to proofread and publicly log differences between different sources and the Shabad OS database.
 

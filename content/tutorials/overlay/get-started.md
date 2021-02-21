@@ -3,8 +3,8 @@ title: Get started with Overlays
 sidebar_label: Get started
 ---
 
-import aboutUrl from "../images/shabados-about-url.png"
-import taskManager from "../images/ip-address-windows-task-manager.png"
+import aboutUrl from '@site/static/img/shabados-about-url.png'
+import taskManager from '@site/static/img/ip-address-windows-task-manager.png'
 
 This tutorial is for users that want to show the currently activated line as livestream captions, video editing slides, and alternate displays (TV, Projector, Chromecast). This tutorial shows how to modify the overlay url in Shabad OS and how to access it through a browser.
 

@@ -1,9 +1,6 @@
 module.exports = {
   tutorialsSidebar: [
     'index',
-    'install',
-    'url-endpoints',
-    'chromecast',
     {
       collapsed: false,
       type: 'category',
@@ -16,7 +13,6 @@ module.exports = {
       items: [
         'overlay/index',
         'overlay/get-started',
-        'overlay/add-livestream-captioning',
         'overlay/create-custom-theme',
       ],
     },

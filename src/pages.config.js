@@ -52,6 +52,7 @@ const pages = [
       id: 'presenter',
       path: 'content/presenter',
       routeBasePath: 'presenter',
+      sidebarPath: require.resolve( './sidebars/presenter' ),
     },
   ],
   [
