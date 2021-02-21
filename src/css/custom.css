@@ -71,6 +71,7 @@
   /* table */
   --ifm-table-stripe-background: inherit;
   --ifm-table-border-color: rgba(128, 128, 128, 0.35);
+  --ifm-table-head-background: rgba(128, 128, 128, 0.1);
   /* blockquote */
   --ifm-blockquote-color: inherit;
   /* code */
@@ -317,12 +318,23 @@ html[data-theme='dark'] .menu > ul > .menu__list-item:first-child {
   Table of Contents
 -----------------------------------------------------------------------------*/
 
-.col > div[class^='tableOfContents']:before {
+.col > div[class^='tableOfContents']:not(:empty):before {
   content: 'In this article';
   font-size: 1rem;
   font-weight: 500;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  border-bottom: 1px solid;
   display: block;
+}
+
+html[data-theme='light']
+  .col
+  > div[class^='tableOfContents']:not(:empty):before {
+  border-color: #e6e6e6;
+}
+html[data-theme='dark']
+  .col
+  > div[class^='tableOfContents']:not(:empty):before {
+  border-color: #2d2e2f;
 }
 
 ul.table-of-contents {
@@ -385,12 +397,20 @@ ul.table-of-contents {
   display: flex;
   align-items: center;
   border-radius: 1rem;
-  border: 1px solid rgba(128, 128, 128, 0.35);
+  border: 1px solid;
   padding: 1.5rem;
   margin: 0.5rem 0;
 }
 
-.product_card:hover {
+html[data-theme='light'] .product_card {
+  border-color: #d3d3d3;
+}
+html[data-theme='dark'] .product_card {
+  border-color: #3d3d3e;
+}
+
+html[data-theme='light'] .product_card:hover,
+html[data-theme='dark'] .product_card:hover {
   border-color: var(--ifm-color-primary);
 }
 
