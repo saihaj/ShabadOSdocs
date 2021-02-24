@@ -4,9 +4,9 @@ title: Sources
 
 The `Sources` table provides a list of published source materials used in the database (e.g. `SGPC`, `Budha Dal Mehron`).
 
-It is possible to have multiple `Sources` for the same [`Lines`](lines), since it is possible for the same line to vary slightly between source materials. This allows comparing different, but widely authenticated, publications for the same composition.
+It is possible to have multiple `Sources` for the same [`Lines`](/database/schema/lines), since it is possible for the same line to vary slightly between source materials. This allows comparing different, but widely authenticated, publications for the same composition.
 
-Use this to select which Gurbani source that [`Lines`](lines) will be displayed from.
+Use this to select which Gurbani source that [`Lines`](/database/schema/lines) will be displayed from.
 
 ## Columns
 

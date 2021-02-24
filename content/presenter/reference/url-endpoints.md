@@ -13,7 +13,7 @@ import taskManager from '@site/static/img/ip-address-windows-task-manager.png'
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | /                                      | The empty endpoint points to the default Shabad OS Presenter page (Users can get a controller from this page using the plus sign in the bottom right and then fullscreening the controller) |
 | /controller/search?controllerOnly=true | A fullscreened controller in the search activity                                                                                                                                            |
-| /overlay                               | HTML file showing all relevant fields of currently activated line. Can be styled/customized by CSS. See the [Overlay](../../tutorials/overlay) article for more information.                |
+| /overlay                               | HTML file showing all relevant fields of currently activated line. Can be styled/customized by CSS. See the [Overlay](/tutorials/overlay) article for more information.                     |
 
 ## Finding the URL of the server
 

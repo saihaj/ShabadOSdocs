@@ -2,9 +2,9 @@
 title: Shabads
 ---
 
-The `Shabads` table is used to group the [`Lines`](lines) together, and provide additional metadata about those [`Lines`](lines).
+The `Shabads` table is used to group the [`Lines`](/database/schema/lines) together, and provide additional metadata about those [`Lines`](/database/schema/lines).
 
-Every Shabad must have a [`composition`](compositions), [`writer`](writers), and [`section`](sections).
+Every Shabad must have a [`composition`](/database/schema/compositions), [`writer`](/database/schema/writers), and [`section`](/database/schema/sections).
 
 The content is unordered by default, and must be ordered by `order_id`.
 
@@ -22,27 +22,27 @@ A unique identifier for the Shabad. Permanent and will never change.
 
 ### `writer_id`
 
-The unique identifier of the [writer](writers) of the Shabad.
+The unique identifier of the [writer](/database/schema/writers) of the Shabad.
 
-| Type    | Constraints                                            |
-| ------- | ------------------------------------------------------ |
-| integer | Foreign Key ([Writers.id](writers#id)), <br/> Not Null |
+| Type    | Constraints                                                             |
+| ------- | ----------------------------------------------------------------------- |
+| integer | Foreign Key ([Writers.id](/database/schema/writers#id)), <br/> Not Null |
 
 ### `section_id`
 
-The unique identifier of the [section](sections) that the Shabad belongs to.
+The unique identifier of the [section](/database/schema/sections) that the Shabad belongs to.
 
-| Type    | Constraints                                              |
-| ------- | -------------------------------------------------------- |
-| integer | Foreign Key ([Sections.id](sections#id)), <br/> Not Null |
+| Type    | Constraints                                                               |
+| ------- | ------------------------------------------------------------------------- |
+| integer | Foreign Key ([Sections.id](/database/schema/sections#id)), <br/> Not Null |
 
 ### `subsection_id`
 
 The unique identifier of the subsection that the Shabad belongs to.
 
-| Type    | Constraints                                    |
-| ------- | ---------------------------------------------- |
-| integer | Foreign Key ([Subsections.id](subsections#id)) |
+| Type    | Constraints                                                     |
+| ------- | --------------------------------------------------------------- |
+| integer | Foreign Key ([Subsections.id](/database/schema/subsections#id)) |
 
 ### `sttm_id`
 
@@ -54,11 +54,11 @@ The unique identifier of the equivalent Shabad within the SikhiToTheMax 2 databa
 
 ### `composition_id`
 
-The Gurbani [composition](compositions) that the Shabad belongs to.
+The Gurbani [composition](/database/schema/compositions) that the Shabad belongs to.
 
-| Type    | Constraints                                            |
-| ------- | ------------------------------------------------------ |
-| integer | Foreign Key ([Sources.id](sources#id)), <br/> Not Null |
+| Type    | Constraints                                                             |
+| ------- | ----------------------------------------------------------------------- |
+| integer | Foreign Key ([Sources.id](/database/schema/sources#id)), <br/> Not Null |
 
 ### `order_id`
 

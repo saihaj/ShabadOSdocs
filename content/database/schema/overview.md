@@ -10,7 +10,7 @@ title: Overview
 
 ### Lines
 
-Gurbani lines, linked to a `Shabad`. [Read more >](lines)
+Gurbani lines, linked to a `Shabad`. [Read more >](/database/schema/lines)
 
 | Example                         | Dependency              |
 | ------------------------------- | ----------------------- |
@@ -18,7 +18,7 @@ Gurbani lines, linked to a `Shabad`. [Read more >](lines)
 
 ### Line_Content
 
-Corresponding Gurmukhi related to the `source` of a `line`. [Read more >](line_content)
+Corresponding Gurmukhi related to the `source` of a `line`. [Read more >](/database/schema/line_content)
 
 | Example                                         | Dependency         |
 | ----------------------------------------------- | ------------------ |
@@ -26,7 +26,7 @@ Corresponding Gurmukhi related to the `source` of a `line`. [Read more >](line_c
 
 ### Line_Types
 
-List of possible line classifications. [Read more >](line_types)
+List of possible line classifications. [Read more >](/database/schema/line_types)
 
 | Example        | Dependency |
 | -------------- | ---------- |
@@ -34,7 +34,7 @@ List of possible line classifications. [Read more >](line_types)
 
 ### Shabads
 
-Grouping of Gurbani `Lines`, with additional metadata. [Read more >](shabads)
+Grouping of Gurbani `Lines`, with additional metadata. [Read more >](/database/schema/shabads)
 
 | Example                              | Dependency                                    |
 | ------------------------------------ | --------------------------------------------- |
@@ -42,7 +42,7 @@ Grouping of Gurbani `Lines`, with additional metadata. [Read more >](shabads)
 
 ### Writers
 
-Composers of `Shabads`. [Read more >](writers)
+Composers of `Shabads`. [Read more >](/database/schema/writers)
 
 | Example             | Dependency |
 | ------------------- | ---------- |
@@ -50,7 +50,7 @@ Composers of `Shabads`. [Read more >](writers)
 
 ### Compositions
 
-A composition of Gurbani `Shabads`. [Read more >](compositions)
+A composition of Gurbani `Shabads`. [Read more >](/database/schema/compositions)
 
 | Example                    | Dependency |
 | -------------------------- | ---------- |
@@ -58,7 +58,7 @@ A composition of Gurbani `Shabads`. [Read more >](compositions)
 
 ### Sources
 
-A source of Gurbani . [Read more >](sources)
+A source of Gurbani . [Read more >](/database/schema/sources)
 
 | Example                    | Dependency |
 | -------------------------- | ---------- |
@@ -66,7 +66,7 @@ A source of Gurbani . [Read more >](sources)
 
 ### Sections
 
-Grouping of `Shabads` within a single composition. [Read more >](sections)
+Grouping of `Shabads` within a single composition. [Read more >](/database/schema/sections)
 
 | Example                    | Dependency     |
 | -------------------------- | -------------- |
@@ -74,7 +74,7 @@ Grouping of `Shabads` within a single composition. [Read more >](sections)
 
 ### Subsections
 
-Sub-groupings within a single section. [Read more >](subsections)
+Sub-groupings within a single section. [Read more >](/database/schema/subsections)
 
 | Example     | Dependency |
 | ----------- | ---------- |
@@ -82,7 +82,7 @@ Sub-groupings within a single section. [Read more >](subsections)
 
 ### Languages
 
-Available translation languages. [Read more >](languages)
+Available translation languages. [Read more >](/database/schema/languages)
 
 | Example   | Dependency |
 | --------- | ---------- |
@@ -90,7 +90,7 @@ Available translation languages. [Read more >](languages)
 
 ### Transliterations
 
-Transliterations for Gurbani `Lines` in a given `Language` and `Source`. [Read more >](transliterations)
+Transliterations for Gurbani `Lines` in a given `Language` and `Source`. [Read more >](/database/schema/transliterations)
 
 | Example                       | Dependency                      |
 | ----------------------------- | ------------------------------- |
@@ -98,7 +98,7 @@ Transliterations for Gurbani `Lines` in a given `Language` and `Source`. [Read m
 
 ### Translation_Sources
 
-Translation source authors and languages for a single [Read more >](translation_sources)
+Translation source authors and languages for a single [Read more >](/database/schema/translation_sources)
 
 | Example                                        | Dependency             |
 | ---------------------------------------------- | ---------------------- |
@@ -106,7 +106,7 @@ Translation source authors and languages for a single [Read more >](translation_
 
 ### Translations
 
-Translations for Gurbani `Lines` from a translation source. [Read more >](translations)
+Translations for Gurbani `Lines` from a translation source. [Read more >](/database/schema/translations)
 
 | Example           | Dependency                     |
 | ----------------- | ------------------------------ |
@@ -114,7 +114,7 @@ Translations for Gurbani `Lines` from a translation source. [Read more >](transl
 
 ### Banis
 
-Named of available Banis. [Read more >](banis)
+Named of available Banis. [Read more >](/database/schema/banis)
 
 | Example        | Dependency |
 | -------------- | ---------- |
@@ -122,7 +122,7 @@ Named of available Banis. [Read more >](banis)
 
 ### Bani_Lines
 
-Groupings of `Lines` to `Banis`. [Read more >](bani_lines)
+Groupings of `Lines` to `Banis`. [Read more >](/database/schema/bani_lines)
 
 | Example | Dependency       |
 | ------- | ---------------- |

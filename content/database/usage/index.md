@@ -21,7 +21,7 @@ Once installed, open the `Database > New Connection` dialog. Select the `SQLite`
 
 A new database entry will appear under the `Database Navigator` tab, and double-clicking this will open the database. Expand the `tables` option to view all the tables in the database, and double-click on any of the tables to view the data. You may also run some of the [SQL queries](#Offline-Applications-SQLite) and explore the dataset further.
 
-Some common query examples can be seen at [SQLite Querying](usage/queries).
+Some common query examples can be seen at [SQLite Querying](/database/usage/queries).
 
 ## Offline Applications - SQLite
 
@@ -33,7 +33,7 @@ You can download the latest [SQLite database release](https://github.com/ShabadO
 This option will mean that you will have to check the Shabad OS Database release page for updates yourself. If you are building an application in JavaScript, please see the [Offline Applications - JavaScript](#Offline-Applications-JavaScript) section below.
 :::
 
-Some common query examples can be seen at [SQLite Querying](usage/queries).
+Some common query examples can be seen at [SQLite Querying](/database/usage/queries).
 
 ## Offline Applications - JavaScript
 

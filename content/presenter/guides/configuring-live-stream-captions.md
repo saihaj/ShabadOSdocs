@@ -99,4 +99,4 @@ values={[
 
 ## Troubleshoot
 
-If there is no Overlay URL in Shabad OS settings, please read [URL Endpoints](../reference/url-endpoints.md).
+If there is no Overlay URL in Shabad OS settings, please read [URL Endpoints](/presenter/reference/url-endpoints).

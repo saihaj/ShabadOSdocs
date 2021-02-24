@@ -13,11 +13,11 @@ The only exception to this rule is that tables or data that you do not require m
 
 ## SQLite
 
-Our [GitHub Releases](https://github.com/ShabadOS/database/releases) contain the latest SQLite3 database releases. [Read about the schema used >](schema/overview)
+Our [GitHub Releases](https://github.com/ShabadOS/database/releases) contain the latest SQLite3 database releases. [Read about the schema used >](/database/schema/overview)
 
 These releases follow [semantic versioning](https://semver.org/), so it is possible to download databases with content additions and fixes without breaking your application.
 
-Running `SELECT * FROM Lines ORDER BY order_id LIMIT 100` will return the first 100 lines that the database contains, in the correct order. [See more example queries >](usage/queries)
+Running `SELECT * FROM Lines ORDER BY order_id LIMIT 100` will return the first 100 lines that the database contains, in the correct order. [See more example queries >](/database/usage/queries)
 
 ## npm
 

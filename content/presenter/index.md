@@ -9,4 +9,4 @@ The Shabad OS Presenter allows you to easily display Sikh bani, whether in the h
 
 Yet, for advanced users, we have found ways to provide powerful functions and flexibility options. Control how many lines are shown on the screen, which languages and pronunciations, and when to apply pauses during reading. In addition, this is the first, publicly available program that the average person could use to display bani on both the presenter and on live streams at the same time.
 
-[Learn more about configuring live streams >](guides/configuring-live-stream-captions)
+[Learn more about configuring live streams >](/presenter/guides/configuring-live-stream-captions)

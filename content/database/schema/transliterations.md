@@ -2,7 +2,7 @@
 title: Transliterations
 ---
 
-The `Transliterations` table contains the corresponding transliteration of a single line in a given [language](languages) and [source](sources).
+The `Transliterations` table contains the corresponding transliteration of a single line in a given [language](/database/schema/languages) and [source](/database/schema/sources).
 
 :::caution
 The `transliteration` can be nullable.
@@ -14,25 +14,25 @@ The `transliteration` can be nullable.
 
 The unique identifier of the line that the transliteration corresponds with.
 
-| Type    | Constraints                                           |
-| ------- | ----------------------------------------------------- |
-| char(4) | Primary Key, <br/> Foreign Key ([Lines.id](lines#id)) |
+| Type    | Constraints                                                            |
+| ------- | ---------------------------------------------------------------------- |
+| char(4) | Primary Key, <br/> Foreign Key ([Lines.id](/database/schema/lines#id)) |
 
 ### `source_id`
 
-The unique identifier of the [Source](sources) that the transliteration is of.
+The unique identifier of the [Source](/database/schema/sources) that the transliteration is of.
 
-| Type    | Constraints                                               |
-| ------- | --------------------------------------------------------- |
-| integer | Primary Key, <br/> Foreign Key ([Sources.id](sources#id)) |
+| Type    | Constraints                                                                |
+| ------- | -------------------------------------------------------------------------- |
+| integer | Primary Key, <br/> Foreign Key ([Sources.id](/database/schema/sources#id)) |
 
 ### `language_id`
 
-The unique identifier of the [Language](languages) that the transliteration is in.
+The unique identifier of the [Language](/database/schema/languages) that the transliteration is in.
 
-| Type    | Constraints                                                   |
-| ------- | ------------------------------------------------------------- |
-| integer | Primary Key, <br/> Foreign Key ([Languages.id](languages#id)) |
+| Type    | Constraints                                                                    |
+| ------- | ------------------------------------------------------------------------------ |
+| integer | Primary Key, <br/> Foreign Key ([Languages.id](/database/schema/languages#id)) |
 
 ### `transliteration`
 

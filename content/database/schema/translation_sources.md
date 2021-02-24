@@ -2,11 +2,11 @@
 title: Translation_Sources
 ---
 
-The `Translation_Sources` table contains all the sources of translations that the database contains, used by the [Translations](translations).
+The `Translation_Sources` table contains all the sources of translations that the database contains, used by the [Translations](/database/schema/translations).
 
-A translation source is a combination of the Gurbani [source](sources), the [language](languages), and the author details.
+A translation source is a combination of the Gurbani [source](/database/schema/sources), the [language](/database/schema/languages), and the author details.
 
-To retrieve the actual [Translations](translations) for a translation source, use the [Translations](translations) table.
+To retrieve the actual [Translations](/database/schema/translations) for a translation source, use the [Translations](/database/schema/translations) table.
 
 ## Columns
 
@@ -36,16 +36,16 @@ The name of the translation source, in Gurmukhi, ASCII representation.
 
 ### `composition_id`
 
-The unique identifier of the Gurbani [composition](compositions) that the translation source corresponds to.
+The unique identifier of the Gurbani [composition](/database/schema/compositions) that the translation source corresponds to.
 
-| Type    | Constraints                                                      |
-| ------- | ---------------------------------------------------------------- |
-| integer | Foreign Key ([Compositions.id](compositions#id)), <br/> Not Null |
+| Type    | Constraints                                                                       |
+| ------- | --------------------------------------------------------------------------------- |
+| integer | Foreign Key ([Compositions.id](/database/schema/compositions#id)), <br/> Not Null |
 
 ### `language_id`
 
-The unique identifier of the [language](languages) that the translation source is translated into.
+The unique identifier of the [language](/database/schema/languages) that the translation source is translated into.
 
-| Type    | Constraints                                                |
-| ------- | ---------------------------------------------------------- |
-| integer | Foreign Key ([Languages.id](languages#id)), <br/> Not Null |
+| Type    | Constraints                                                                 |
+| ------- | --------------------------------------------------------------------------- |
+| integer | Foreign Key ([Languages.id](/database/schema/languages#id)), <br/> Not Null |

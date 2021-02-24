@@ -2,7 +2,7 @@
 title: Sections
 ---
 
-The `Sections` table contains a list of all the different sections, per [composition](compositions). Every section must have a single [composition](compositions).
+The `Sections` table contains a list of all the different sections, per [composition](/database/schema/compositions). Every section must have a single [composition](/database/schema/compositions).
 
 ## Columns
 
@@ -56,8 +56,8 @@ The physical "page" from the source that this section ends on.
 
 ### `composition_id`
 
-The unique identifier of the [composition](compositions) that this section belongs to.
+The unique identifier of the [composition](/database/schema/compositions) that this section belongs to.
 
-| Type    | Constraints                                                      |
-| ------- | ---------------------------------------------------------------- |
-| integer | Foreign Key ([Compositions.id](compositions#id)), <br/> Not Null |
+| Type    | Constraints                                                                       |
+| ------- | --------------------------------------------------------------------------------- |
+| integer | Foreign Key ([Compositions.id](/database/schema/compositions#id)), <br/> Not Null |

@@ -2,7 +2,7 @@
 title: Translations
 ---
 
-The `Translations` table contains the corresponding translation of a single line from a [translation source](translation_sources).
+The `Translations` table contains the corresponding translation of a single line from a [translation source](/database/schema/translation_sources).
 
 :::caution
 The `translation` can be nullable.
@@ -16,17 +16,17 @@ If used, the `additional_information` is a serialized JSON string that must be d
 
 The unique identifier of the Gurbani line that the translation corresponds with.
 
-| Type    | Constraints                                           |
-| ------- | ----------------------------------------------------- |
-| char(4) | Primary Key, <br/> Foreign Key ([Lines.id](lines#id)) |
+| Type    | Constraints                                                            |
+| ------- | ---------------------------------------------------------------------- |
+| char(4) | Primary Key, <br/> Foreign Key ([Lines.id](/database/schema/lines#id)) |
 
 ### `translation_source_id`
 
-The unique identifier of the [translation source](translation_sources) that the translation originates from.
+The unique identifier of the [translation source](/database/schema/translation_sources) that the translation originates from.
 
-| Type    | Constraints                                                                       |
-| ------- | --------------------------------------------------------------------------------- |
-| integer | Primary Key, <br/> Foreign Key ([Translation_Sources.id](translation_sources#id)) |
+| Type    | Constraints                                                                                        |
+| ------- | -------------------------------------------------------------------------------------------------- |
+| integer | Primary Key, <br/> Foreign Key ([Translation_Sources.id](/database/schema/translation_sources#id)) |
 
 ### `translation`
 

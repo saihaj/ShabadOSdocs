@@ -2,7 +2,7 @@
 title: Line_Types
 ---
 
-The `Line_Types` table contains the possible classifications of each [line](lines).
+The `Line_Types` table contains the possible classifications of each [line](/database/schema/lines).
 
 This can be useful for filtering out _rahao_ lines from searches, or reordering the _manglacharan_ if desired.
 

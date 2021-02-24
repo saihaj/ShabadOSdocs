@@ -2,9 +2,9 @@
 title: Banis
 ---
 
-The `Banis` table provides a list of all the Banis tht the database contains. A Bani is a collection of [Lines](lines).
+The `Banis` table provides a list of all the Banis tht the database contains. A Bani is a collection of [Lines](/database/schema/lines).
 
-To retrieve the actual [Lines](lines) within a Bani, use the [Bani_Lines](bani_lines) table.
+To retrieve the actual [Lines](/database/schema/lines) within a Bani, use the [Bani_Lines](/database/schema/bani_lines) table.
 
 ## Columns
 

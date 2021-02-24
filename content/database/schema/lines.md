@@ -4,11 +4,11 @@ title: Lines
 
 The `Lines` table contains all the Sikh bani and panthic content, across all sources.
 
-Many lines must belong to one [Shabad](shabads).
+Many lines must belong to one [Shabad](/database/schema/shabads).
 
 The content is unordered by default, and must be ordered by `order_id`. The `id` is a four-letter, immutable identifier that will refer to the same line across database versions.
 
-Currently, the `gurmukhi` stores an ASCII representation of Gurbani. They may be converted to unicode with [`gurmukhi-utils`](../../gurmukhi-utils).
+Currently, the `gurmukhi` stores an ASCII representation of Gurbani. They may be converted to unicode with [`gurmukhi-utils`](/gurmukhi-utils).
 
 ## Columns
 
@@ -22,11 +22,11 @@ A unique identifier for the line which never changes.
 
 ### `shabad_id`
 
-A unique identifier of the [Shabad](shabads) to which the line belongs to.
+A unique identifier of the [Shabad](/database/schema/shabads) to which the line belongs to.
 
-| Type    | Constraints                                           |
-| ------- | ----------------------------------------------------- |
-| char(3) | Foreign Key ([Shabads.id](shabads#id)) <br/> Not Null |
+| Type    | Constraints                                                            |
+| ------- | ---------------------------------------------------------------------- |
+| char(3) | Foreign Key ([Shabads.id](/database/schema/shabads#id)) <br/> Not Null |
 
 ### `source_page`
 
@@ -80,9 +80,9 @@ Same as `first_letters`, but includes heavy vishraams. Useful for prioritizing s
 
 The unique identifier of the line type.
 
-| Type    | Constraints                            |
-| ------- | -------------------------------------- |
-| integer | Foreign Key ([Line_Types](line_types)) |
+| Type    | Constraints                                             |
+| ------- | ------------------------------------------------------- |
+| integer | Foreign Key ([Line_Types](/database/schema/line_types)) |
 
 ### `order_id`
 

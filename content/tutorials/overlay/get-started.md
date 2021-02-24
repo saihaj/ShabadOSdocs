@@ -10,7 +10,7 @@ This tutorial is for users that want to show the currently activated line as liv
 
 ## Concept
 
-There is an html page containing the information related to the currently activated line in Shabad OS. This html page can be manipulated by styling called CSS. Users can also customize this page by customizing the CSS (i.e. [Create a Custom Overlay Theme](./create-custom-theme.md)). This html page requires javascript, which is supported by most modern web browsers.
+There is an html page containing the information related to the currently activated line in Shabad OS. This html page can be manipulated by styling called CSS. Users can also customize this page by customizing the CSS (i.e. [Create a Custom Overlay Theme](/tutorials/overlay/create-custom-theme)). This html page requires javascript, which is supported by most modern web browsers.
 
 Users can use Google Chrome to open the overlay URL and then cast it to a chromecast. Users could use built in web browsers in some smart TVs or modern consoles to accesss the overlay URL. Users could simply use the web browsers on their laptop/PC to make images to fit on their video editors as a captions slide. Mostly we have helped users integrate a web browser with their live streaming software for live captioning.
 
@@ -33,7 +33,7 @@ Overlays are designed around filling the screen, but a broadcast element could r
 :::
 
 :::tip
-[Customize](./create-custom-theme.md) an overlay with the provided example overlay.
+[Customize](/tutorials/overlay/create-custom-theme) an overlay with the provided example overlay.
 :::
 
 ### Step 3: Toggle visible information
@@ -42,7 +42,7 @@ Similar to choosing what is available on the presenter, a user toggles fields fo
 
 ## Troubleshooting
 
-If you cannot find the URL in _Shabad OS > Settings > Overlay_ then continue reading the following two methods to manually find the device's URL. After you find the URL you need to append "/overlay" to the end of the URL in order to access the overlay as explained in [URL Endpoints](../url-endpoints.md).
+If you cannot find the URL in _Shabad OS > Settings > Overlay_ then continue reading the following two methods to manually find the device's URL. After you find the URL you need to append "/overlay" to the end of the URL in order to access the overlay as explained in [URL Endpoints](/presenter/reference/url-endpoints).
 
 The device running Shabad OS has an IP address. In production, Shabad OS is available from port 1699 of this IP address. This combination of IP address and port can be used in most web browsers.
 

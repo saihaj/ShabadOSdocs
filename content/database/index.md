@@ -5,9 +5,9 @@ slug: /
 
 <p class='lead'>A digital representation of Sikh Bani and other Panthic texts with a public logbook of sangat-sourced corrections</p>
 
-The Shabad OS Database contains published materials from around the world including SGPC published Sri Guru Granth Sahib ji, Taksaal published Sri Dasam Granth ji, and SikhNet published English translations by Dr. Sant Singh Khalsa. [Read a full list of published sources used in the database >](source-material)
+The Shabad OS Database contains published materials from around the world including SGPC published Sri Guru Granth Sahib ji, Taksaal published Sri Dasam Granth ji, and SikhNet published English translations by Dr. Sant Singh Khalsa. [Read a full list of published sources used in the database >](/database/source-material)
 
-Previous efforts to digitize Sikh banis and panthic texts have mostly been individual efforts. This database being open-source has allowed dozens of individuals to contribute to it's content and accuracy. Thousands of corrections small and large have been made to ensure a continuously accurate database to truly reflect the original published sources. As discrepancies between the originals and digital are found, they can be fixed by anyone editing the plain text files containing the data and opening a pull request to shabados/database ([learn more here >](../tutorials/viewer/proofreading)). Once the PR is accepted into the main branch, database files are automatically generated and can be reflected in online APIs. [Check out the plain text json files >](https://github.com/shabados/database/tree/main/data)
+Previous efforts to digitize Sikh banis and panthic texts have mostly been individual efforts. This database being open-source has allowed dozens of individuals to contribute to it's content and accuracy. Thousands of corrections small and large have been made to ensure a continuously accurate database to truly reflect the original published sources. As discrepancies between the originals and digital are found, they can be fixed by anyone editing the plain text files containing the data and opening a pull request to shabados/database ([learn more here >](/tutorials/viewer/proofreading)). Once the PR is accepted into the main branch, database files are automatically generated and can be reflected in online APIs. [Check out the plain text json files >](https://github.com/shabados/database/tree/main/data)
 
 Since the project is open-source, it consequently has reduced the need to duplicate efforts among various parties. There is a central place to update all published sources of bani and panthic texts. There is no point of contention on what should be corrected or not. If it is written a certain way in a published source (e.g. a SGPC published Sri Guru Granth Sahib ji from volumes 1-4 of Shabadaarth circa 2009-2012), then it should be reflected that way in the digital database.
 
@@ -17,7 +17,7 @@ Furthermore, if any organization were to attempt paath bhed (critical analysis/r
 
 In this sense, the Shabad OS Database is providing a single platform, a single point of truth, for all reputable publications of gurbani and panthic texts. All of which is free to be consumed, analyzed, and researched by developers and end-users in variously generated database files and online APIs.
 
-[Start using the Shabad OS Database as the source of truth for your applications >](installing-or-accessing)
+[Start using the Shabad OS Database as the source of truth for your applications >](/database/installing-or-accessing)
 
 ## Partners
 

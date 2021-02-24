@@ -2,7 +2,7 @@
 title: Line_Content
 ---
 
-The `Line_Content` table contains the content for [Lines](lines) of [Sources](sources). This exists to support the different Sources of the same line.
+The `Line_Content` table contains the content for [Lines](/database/schema/lines) of [Sources](/database/schema/sources). This exists to support the different Sources of the same line.
 
 ## Columns
 
@@ -10,17 +10,17 @@ The `Line_Content` table contains the content for [Lines](lines) of [Sources](so
 
 The unique identifier of the line.
 
-| Type    | Constraints                                           |
-| ------- | ----------------------------------------------------- |
-| char(4) | Primary Key, <br/> Foreign Key ([Lines.id](lines#id)) |
+| Type    | Constraints                                                            |
+| ------- | ---------------------------------------------------------------------- |
+| char(4) | Primary Key, <br/> Foreign Key ([Lines.id](/database/schema/lines#id)) |
 
 ### `source_id`
 
 The unique identifier of the source.
 
-| Type    | Constraints                                         |
-| ------- | --------------------------------------------------- |
-| integer | Primary, <br/> Foreign Key ([Sources](sources)) Key |
+| Type    | Constraints                                                          |
+| ------- | -------------------------------------------------------------------- |
+| integer | Primary, <br/> Foreign Key ([Sources](/database/schema/sources)) Key |
 
 ### `gurmukhi`
 

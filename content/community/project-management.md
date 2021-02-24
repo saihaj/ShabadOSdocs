@@ -9,7 +9,7 @@ Thank you for your interest in project management. This document is primarily in
 
 ## Roadmap
 
-Our roadmap consists of high-level objectives which are done on an organization level, not the project/repo level. These goals are established for the long-term (6-12 months). The roadmap is developed based on the previous roadmap and topics we've heard from the community (see how to provide [feedback](./support-and-feedback.md)).
+Our roadmap consists of high-level objectives which are done on an organization level, not the project/repo level. These goals are established for the long-term (6-12 months). The roadmap is developed based on the previous roadmap and topics we've heard from the community (see how to provide [feedback](community/support-and-feedback)).
 
 These high-level objectives are decided by the [project owners](https://github.com/orgs/ShabadOS/people) and steer our development iterations.
 
