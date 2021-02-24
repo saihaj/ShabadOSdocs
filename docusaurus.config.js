@@ -60,9 +60,8 @@ module.exports = {
     },
     algolia: {
       // https://v2.docusaurus.io/docs/search/
-      appId: '7D05AWXIFX',
-      apiKey: '9177c228f410f6edbe32a2e9c4140b2e',
-      indexName: 'shabados_docs',
+      apiKey: '008a4ddf459e4f41ceddc60d6baebc6f',
+      indexName: 'shabados',
     },
     prism: {
       theme: require( 'prism-react-renderer/themes/github' ),

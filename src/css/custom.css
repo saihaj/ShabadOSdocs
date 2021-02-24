@@ -387,6 +387,10 @@ ul.table-of-contents {
   max-width: calc(var(--ifm-container-width) / 12 * 9);
 }
 
+.home.container .DocSearch-Button {
+  width: 100%;
+}
+
 .product_card,
 .product_card:hover {
   color: var(--ifm-color-content);

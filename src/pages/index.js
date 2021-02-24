@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import Layout from '@theme/Layout'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Link from '@docusaurus/Link'
+import { DocSearch } from '@docsearch/react'
 
 import styles from './styles.module.css'
 
@@ -123,6 +124,9 @@ const Home = () => {
         <div className="home container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <div>
+            <DocSearch apiKey="008a4ddf459e4f41ceddc60d6baebc6f" indexName="shabados" />
+          </div>
         </div>
       </header>
 
