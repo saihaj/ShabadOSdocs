@@ -1,0 +1,47 @@
+name: Danger Bot
+
+# https://github.com/danger/danger-js/blob/35a98bb3f03d0bc03b1401b561dbb33890faa4e5/source/ci_source/providers/GitHubActions.ts#L152
+on:
+  pull_request:
+    types:
+      - edited
+      - opened
+      - reopened
+      - synchronize
+  pull_request_target:
+    types:
+      - edited
+      - opened
+      - reopened
+      - synchronize
+
+jobs:
+  danger:
+    name: Danger JS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: Cache Node.js modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-
+            ${{ runner.OS }}-
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Run Danger JS
+        env:
+          DANGER_GITHUB_API_TOKEN: ${{ secrets.GH_BOT_TOKEN }}
+          # See https://github.com/danger/danger-js/issues/1042
+          DANGER_GITHUB_API_BASE_URL: 'https://api.github.com'
+        run: yarn danger ci
