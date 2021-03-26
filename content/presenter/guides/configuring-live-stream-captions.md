@@ -29,6 +29,7 @@ values={[
 {label: 'OBS Studio', value: 'obs-studio'},
 {label: 'vMix', value: 'vmix'},
 {label: 'Wirecast', value: 'wirecast'},
+{label: 'Streamlabs (iOS)', value: 'streamlabs'},
 ]}>
 <TabItem value="obs-studio">
 
@@ -93,6 +94,39 @@ values={[
    <img src={wirecastShotLayerProperties} alt="Wirecast shot layer properties" width={500} />
 
 8. Set the **Scale** slider to 100%.
+
+</TabItem>
+<TabItem value="streamlabs">
+
+:::warning
+This only works on the iOS version of Streamlabs until the developers fix an issue requiring "https" links on their Android app. This requires an iPhone or iPad in addition to the laptop or desktop that is running the Presenter app.
+:::
+
+**Adding a URL layer to the Streamlabs Editor**
+
+1. Tap the **Menu Button** (=) on the top left.
+2. In **Advanced Mode**, tap **Editor**.
+3. Tap **Layers** on the top right.
+4. Tap the **Plus Button** (+) on the top right.
+5. Tap **Add a custom item**.
+6. Tap **Add a URL**.
+7. Fill in the **URL** with the Overlay URL from Shabad OS.
+
+:::caution
+Though the hint text in Streamlabs mentions `https` be sure to use `http` instead for the URL from the Shabad OS Presenter. For example, if the Shabad OS Presenter says the URL is `192.168.1.50:1699/overlay`, then type `http://192.168.1.50:1699/overlay` into Streamlabs.
+:::
+
+1. Tap **Add**.
+2. Resize the layer. See **Tips for resizing** below.
+3. Tap **Save** in the top left corner.
+
+**Tips for resizing the layer**
+
+- Move the layer by tapping and dragging the center of the layer.
+- Resize the layer in the Streamlabs Editor by tapping and dragging either the squares in the corners or the lines on each side of the layer.
+- An easy way to full screen a layer is to move the layer to the bottom left and then use the top right corner to resize it all the way to the top right.
+- When switching from landscape to portrait mode, it is possible to reset all the layers to their original size by tapping **Reset** in the top right corner. If the **Reset** button is being covered by the Overlay layer, it might be easier to simply delete and recreate the Overlay layer.
+- Play with different heights to control the font size. Decreasing the height of the Shabad OS Overlay will make the font sizes smaller. This is especially helpful for portrait mode.
 
 </TabItem>
 </Tabs>
