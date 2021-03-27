@@ -7,6 +7,7 @@ module.exports = {
       items: [
         'guides/installing-shabad-os-presenter',
         'guides/configuring-live-stream-captions',
+        'guides/integrating-closed-captioning-in-zoom-meetings',
         'guides/using-google-chrome-to-chromecast-shabad-os',
       ],
     },

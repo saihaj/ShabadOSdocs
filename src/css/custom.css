@@ -89,7 +89,6 @@ html[data-theme='light'] {
   --ifm-toc-border-color: #f2f2f2;
   /* footer */
   --ifm-footer-background-color: #f6f3ef;
-  --ifm-background-surface-color: #f2f2f2;
 }
 
 html[data-theme='dark'] {
@@ -102,7 +101,6 @@ html[data-theme='dark'] {
   --ifm-color-info: var(--ifm-color-info-dark);
   --ifm-color-warning: var(--ifm-color-warning-dark);
   --ifm-color-danger: var(--ifm-color-danger-dark);
-  --ifm-background-surface-color: var(--ifm-color-gray-800);
 }
 
 strong,
@@ -485,6 +483,34 @@ html[data-theme='dark'] .product_card:hover {
 }
 
 /*-----------------------------------------------------------------------------
+  Tabs
+-----------------------------------------------------------------------------*/
+
+html[data-theme='light'] .tabs,
+html[data-theme='light'] .tabs + div {
+  background: #f2f2f2;
+}
+
+html[data-theme='dark'] .tabs,
+html[data-theme='dark'] .tabs + div {
+  background: #232324;
+}
+
+.tabs {
+  border-radius: var(--ifm-global-radius);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.tabs + div {
+  border-radius: var(--ifm-global-radius);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 1rem;
+  margin-top: 0em !important;
+}
+
+/*-----------------------------------------------------------------------------
   Mobile
 -----------------------------------------------------------------------------*/
 
@@ -494,18 +520,6 @@ html[data-theme='dark'] .product_card:hover {
   --ifm-button-border-color: var(--ifm-navbar-link-hover-color);
   padding: 1rem;
   border-radius: 4rem;
-}
-
-.button--secondary[aria-label='Close Menu'] > span {
-  font-size: 0;
-}
-
-.button--secondary[aria-label='Close Menu'] > span::before {
-  content: '+';
-  rotate: 45deg;
-  font-weight: 100;
-  font-size: 2rem;
-  translate: 0.15rem -0.1rem;
 }
 
 /*-----------------------------------------------------------------------------
