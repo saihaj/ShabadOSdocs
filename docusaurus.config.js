@@ -48,7 +48,6 @@ module.exports = {
             { to: 'theme-tool/', label: 'Theme Tool' },
           ],
         },
-        { to: 'tutorials/', label: 'Tutorials', position: 'left' },
         { to: 'community/', label: 'Community', position: 'left' },
         {
           href: 'https://github.com/shabados/docs',
