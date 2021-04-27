@@ -5,6 +5,9 @@
 User guides, quick-references, developer best practices, and other Shabad OS related documentation
 
 [![Release][release-image]][release-url]
+<a href="https://vercel.com/?utm_source=ShabadOS&utm_campaign=oss">
+<img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" width="100" alt="Powered by Vercel"/>
+</a>
 
 **Table of contents**
 
